@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            display: flex;
+            height: 80vh;
+            /* justify-content: center; */
+            align-items: center;
+            /* flex-direction: column; */
+            flex-direction: row;    
+            /* flex-wrap: wrap; */
+            align-content: start;
+            /* there is no justify-items in flexbox */
+            /* flex-flow: row wrap; ye 2 property set krne ky kam ati hai ek flex direction or flex wrap */
+            /* gap: 30px; */
+            /* row-gap: 40px; */
+            /* column-gap: 10px; */
+            gap: 40px 10px;
+        }
+
+        .item {
+            /* flex-grow: 1; */
+            height: 92px;
+            width: 92px;
+            border: 2px solid black;
+            /* margin: 12px; */
+            background-color: blueviolet;
+        }
+        .item1 {
+            /* flex-grow: 2; */
+            /* flex-shrink: 2; */
+            align-self: flex-end;
+        }
+        .item2 {
+            align-items: flex-start;
+        }
+
+        .item3 {
+            align-self: flex-start;
+            /* flex-grow: 2; */
+        }
+        /* .navbar {
+            display: flex;
+            gap: 0.6rem;
+            font-size: 1.4rem;
+            justify-content: space-between;
+            width: 100%;
+
+        }
+
+        .header{
+            display: flex;
+            align-items: center;
+            padding: 2rem;
+        } */
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+            <div class="item">4</div>
+            <div class="item"></div>
+        </div>
+
+    </main>
+        <!-- <div class="header"> -->
+            <!-- image tag  -->
+            <!-- <h1>LOGO</h1>
+
+            <nav class="navbar">
+                <span class="nav-item">home</span>
+                <span class="nav-item">home</span>
+                <span class="nav-item">home</span>
+
+
+            </nav>
+        </div> -->
+</body>
+
+</html>

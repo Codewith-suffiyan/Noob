@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The specificity of this selector is 1  */
+        h1 {
+            color: aqua;
+        }
+        /* The specificity of this selector is 10  */
+        .blue {
+            color: green;
+        }
+
+        /* The specificity of this selector is 1 + 10  */
+        h1.green {
+            color: red;
+        }
+
+         /* This is an example of attribute selector. The specificity of this selector is 10  */
+        /* Attribute Selector */
+        [hey-s=a]{
+            /* background-color: gray; */
+            color: maroon;
+        }
+
+        /* The specificity of this selector is 10  */
+        .gray {
+            color: orange;
+        }
+
+        /* quick quiz specificity total kitni hai */
+         /* The specificity of this selector is 1 + 10 + 10 + 10 + 10 = 41  */
+         a.harryclass.rohan-class[href]:hover {
+            color: lightpink;
+         }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="blue green gray" hey-s="a">CSS Specificity</h1>
+    </div>
+</body>
+
+</html>

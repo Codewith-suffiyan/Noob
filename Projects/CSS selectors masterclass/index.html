@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        /* div {
+            background-color: yellowgreen;
+        } */
+
+        /* Class Selector */
+        /* .hi {
+            background-color: yellow;
+        } */
+
+        /* Attribute Selector */
+        [data-x=a] {
+            background-color: gray;
+            color: lightcoral;
+        }
+
+        /* Id Selector */
+        #blue {
+            background-color: green;
+        }
+
+        /* Child Selectors */
+        div > p {
+            color: blueviolet;
+            background-color: gray;
+        }
+
+        
+        /* Decendant Selector */
+        div p {
+            color: red;
+            background-color: blue;
+        }
+
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited {
+            color: red;
+        }
+
+        a:link {
+            color: brown;
+        }
+
+        a:active {
+            background-color: black;
+        }
+
+        a:hover {
+            color: red;
+            background-color: blueviolet;
+        }
+
+        .h:hover{
+            background-color: aquamarine;
+        }
+
+        p:first-child{
+            background-color: bisque;
+        }
+        
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>Iam First</p>
+        <p>Iam Second</p>
+    </main>
+
+    <div class="h">Checking
+
+    </div>
+
+    <div id="blue">
+        Iam a dev   
+        <article>
+        <p>Iam a paragraph inside div</p>
+        </article>
+    </div>
+
+    <div class="hi">
+        Iam another div
+    </div>
+
+    <h1 data-x="a">Attribute Selector</h1>
+    
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook3.com">Go to Facebook</a>
+</body>
+</html>

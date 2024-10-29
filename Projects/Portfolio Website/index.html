@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Suffiyan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Services</li>
+                    <li>Projects</li>
+                    <li>Contact Me</li>
+                    <button class="btn">Login</button>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="overlay">
+
+    </div>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="color">Suffiyan</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="developer.png.png" alt="">
+            </div>
+        </section>
+
+        <div class="seperation"></div>
+
+        <section class="secondSection">
+            <span class="text-color">What I have done so</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="img-top" src="html.png.png" alt="">
+                    <div class="vertical-tittle">
+                        HTML Developer (2010-2012)
+                    </div>
+                    <div class="vertical-paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ipsum. Deserunt libero doloremque
+                        dolorum adipisci culpa incidunt modi, est impedit at, officiis sapiente?
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="img-top1" src="css.png.png" alt="">
+                    <div class="vertical-tittle1">
+                        CSS Developer (2012-2015)
+                    </div>
+                    <div class="vertical-paragraph1">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere consectetur inventore sunt
+                        cumque nostrum libero, porro, repellendus aliquid sed, minus ex quisquam perspiciatis?
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="img-top2" src="js.png.png" alt="">
+                    <div class="vertical-tittle2">
+                        Java Script Developer (2015-2019)
+                    </div>
+                    <div class="vertical-paragraph2">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore commodi repellendus ea maiores
+                        quae iste molestias quo beatae, tempore doloribus ipsum modi maxime?
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="img-top3" src="react-js.png.png" alt="">
+                    <div class="vertical-tittle3">
+                        React-Js Developer (2019-2021)
+                    </div>
+                    <div class="vertical-paragraph3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, praesentium corporis unde
+                        voluptatem ipsam corrupti nostrum cumque temporibus, dicta eum officiis. Impedit, veritatis.
+                    </div>
+                </div>
+
+                <div class="vertical"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Suffiyan's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second"></div>
+            <div class="footer-third"></div>
+            <div class="footer-fourth"></div>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.', 'Web Designer.', 'Full Stack Developer.', "React-Js Master."],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>

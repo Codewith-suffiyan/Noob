@@ -1,0 +1,13 @@
+.red {
+    background-color: gray;
+    color: blue;
+}
+
+#seconddiv {
+    border: 3px green dotted; 
+}
+
+.bg-yellow {
+    background-color: purple;
+    border: 7px lightgreen solid;
+}
